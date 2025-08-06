@@ -21,3 +21,23 @@ void shellSort(int arr[], int n)
 
     }
 }
+
+int main(void)
+{
+    int arr[] = {20, 33, 1, 4, 23, 43, 2, 0};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Original array: ");
+    for (int i = 0; i < n; i++)
+        printf("%d ", arr[i]);
+    printf("\n");
+
+    shellSort(arr, n);
+
+    printf("Sorted array: ");
+    for (int i = 0; i < n; i++)
+        printf("%d ", arr[i]);
+    printf("\n");
+
+    return 0;
+}
